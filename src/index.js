@@ -89,7 +89,7 @@ function DocxMerger(options, files) {
 
         zip.file("word/document.xml", xml);
 
-        callback(zip.generate({ type: type }));
+        return callback(zip.generate({ type: type }));
     };
 
 
